@@ -1,0 +1,2 @@
+#V2
+(contract-call? .my-lovely-nft mint tx-sender)

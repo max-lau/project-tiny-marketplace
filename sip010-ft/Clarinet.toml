@@ -1,0 +1,27 @@
+[project]
+name = "sip010-ft"
+authors = []
+description = ""
+telemetry = true
+boot_contracts = ["pox", "costs-v2", "bns"]
+
+[[project.requirements]]
+contract_id = "SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard"
+
+[project.cache_location]
+path = ".requirements"
+[contracts.my-lovely-coin]
+path = "contracts/my-lovely-coin.clar"
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false

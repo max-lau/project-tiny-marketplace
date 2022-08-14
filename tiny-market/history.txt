@@ -1,0 +1,6 @@
+#V2
+(contract-call? .sip009-nft mint tx-sender)
+(contract-call? .tiny-market list-asset .sip009-nft {taker: none, token-id u1, expiry: u500, price: u150, payment-asset-contract: none})
+(contract-call? .tiny-market list-asset .sip009-nft {taker: none, token-id: u1, expiry: u500, price: u150, payment-asset-contract: none})
+(contract-call? .sip009-nft mint tx-sender)
+(contract-call? .tiny-market list-asset .sip009-nft {taker: none, token-id: u1, expiry: u500, price: u150, payment-asset-contract: none})
